@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="MSW.Light.ActiveDirectory" Version="0.0.0.2" />
-    <PackageReference Include="MSW.Light.AspNetCore.Hosting" Version="0.0.0.4" />
+    <PackageReference Include="MSW.Light.AspNetCore.Hosting" Version="0.0.0.6" />
   </ItemGroup>
 
   <ItemGroup>

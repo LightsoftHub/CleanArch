@@ -1,5 +1,4 @@
 ﻿using CleanArch.eCode.Shared.Authorization;
-using CleanArch.eCode.WebApi.Models;
 using Light.ActiveDirectory.Interfaces;
 using Light.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -61,11 +60,11 @@ public class UserController(
         return res.Ok();
     }
 
-    [HttpPut("force_password")]
+    [HttpPut("{id}/force_password")]
     [MustHavePermission(Permissions.Users.Update)]
-    public async Task<IActionResult> ForcePasswordAsync(ForcePasswordRequest request)
+    public async Task<IActionResult> ForcePasswordAsync(string id, [FromBody] string password)
     {
-        var res = await userService.ForcePasswordAsync(request.Id, request.Password);
+        var res = await userService.ForcePasswordAsync(id, password);
         return res.Ok();
     }
 
