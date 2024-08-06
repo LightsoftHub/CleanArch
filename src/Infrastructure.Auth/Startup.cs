@@ -1,7 +1,6 @@
 ﻿using CleanArch.eCode.Infrastructure.Auth.Permissions;
 using CleanArch.eCode.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArch.eCode.Infrastructure.Auth;

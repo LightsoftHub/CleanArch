@@ -12,7 +12,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.7" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.7" />
-    <PackageReference Include="MSW.Light.Serilog" Version="0.0.0.2" />
   </ItemGroup>
 
   <ItemGroup>

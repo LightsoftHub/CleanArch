@@ -2,11 +2,11 @@
 using CleanArch.eCode.Infrastructure;
 using CleanArch.eCode.Infrastructure.Auth;
 using Light.ActiveDirectory;
-using Light.AspNetCore.Hosting;
-using Light.AspNetCore.Hosting.CORS;
-using Light.AspNetCore.Hosting.JwtAuth;
-using Light.AspNetCore.Hosting.Middlewares;
-using Light.AspNetCore.Hosting.Swagger;
+using Light.AspNetCore.Builder;
+using Light.AspNetCore.CORS;
+using Light.AspNetCore.Middlewares;
+using Light.AspNetCore.Swagger;
+using Light.Extensions.DependencyInjection;
 using Light.Identity.EntityFrameworkCore;
 using Light.Identity.EntityFrameworkCore.Options;
 
@@ -24,8 +24,6 @@ public static class ConfigureExtensions
         services.AddAuth(configuration);
 
         services.AddCorsPolicies(configuration);
-
-        services.AddGlobalExceptionHandler();
 
         services
             .AddInfrastructure(configuration)
@@ -61,8 +59,9 @@ public static class ConfigureExtensions
 
     public static IApplicationBuilder ConfigurePipelines(this IApplicationBuilder builder, IConfiguration configuration) =>
     builder
+        .UseMiddleware<TraceIdMiddleware>()
         .UseRequestLoggingMiddleware(configuration)
-        .UseExceptionHandler()
+        .UseExceptionHandlerMiddleware()
         .UseRouting()
         .UseCorsPolicies(configuration) // must add before Auth
         .UseAuthentication()

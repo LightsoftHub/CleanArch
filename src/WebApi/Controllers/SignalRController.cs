@@ -17,7 +17,7 @@ public class SignalrController(ICurrentUser currentUser) : VersionedApiControlle
         }
 
         var res = await Mediator.Send(request);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpGet("{id}")]
@@ -28,20 +28,20 @@ public class SignalrController(ICurrentUser currentUser) : VersionedApiControlle
         if (res.Succeeded && res.Data.ToUserId == currentUser.UserId)
             await Mediator.Send(new MarkNotificationAsRead(id));
 
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpGet("{userId}/count_unread")]
     public async Task<IActionResult> CountUnreadAsync(string userId)
     {
         var res = await Mediator.Send(new CountUnreadUserNotification(userId));
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpPost]
     public async Task<IActionResult> PostAsync([FromBody] AddNotification request)
     {
         var res = await Mediator.Send(request);
-        return res.Ok();
+        return res.ToActionResult();
     }
 }

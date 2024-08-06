@@ -18,7 +18,7 @@ public class RoleController(IRoleService roleService) : VersionedApiController
     public async Task<IActionResult> GetAsync([FromRoute] string id)
     {
         var result = await roleService.GetByIdAsync(id);
-        return result.Ok();
+        return result.ToActionResult();
     }
 
     [HttpPost]
@@ -26,7 +26,7 @@ public class RoleController(IRoleService roleService) : VersionedApiController
     public async Task<IActionResult> CreateAsync([FromBody] CreateRoleRequest request)
     {
         var res = await roleService.CreateAsync(request);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpPut]
@@ -34,7 +34,7 @@ public class RoleController(IRoleService roleService) : VersionedApiController
     public async Task<IActionResult> UpdateAsync([FromBody] RoleDto request)
     {
         var res = await roleService.UpdateAsync(request);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpDelete("{id}")]

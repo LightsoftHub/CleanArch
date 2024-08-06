@@ -14,21 +14,21 @@ public class UserController(
     public async Task<IActionResult> GetAsync()
     {
         var res = await userService.GetAllAsync();
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetAsync(string id)
     {
         var res = await userService.GetByIdAsync(id);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpGet("by_username/{username}")]
     public async Task<IActionResult> GetByUsernameAsync(string username)
     {
         var res = await userService.GetByUserNameAsync(username);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpPost]
@@ -36,7 +36,7 @@ public class UserController(
     public async Task<IActionResult> PostAsync(CreateUserRequest request)
     {
         var res = await userService.CreateAsync(request);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpPut("{id}")]
@@ -45,11 +45,11 @@ public class UserController(
     {
         if (id != request.Id)
         {
-            return Result.BadRequest("Validate User ID not match").Ok();
+            return Result.Error("Validate User ID not match").ToActionResult();
         }
 
         var res = await userService.UpdateAsync(request);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpDelete("{id}")]
@@ -57,7 +57,7 @@ public class UserController(
     public async Task<IActionResult> DeleteAsync(string id)
     {
         var res = await userService.DeleteAsync(id);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpPut("{id}/force_password")]
@@ -65,13 +65,13 @@ public class UserController(
     public async Task<IActionResult> ForcePasswordAsync(string id, [FromBody] string password)
     {
         var res = await userService.ForcePasswordAsync(id, password);
-        return res.Ok();
+        return res.ToActionResult();
     }
 
     [HttpGet("get_domain_user/{userName}")]
     public async Task<IActionResult> GetDomainUserAsync([FromRoute] string userName)
     {
         var res = await activeDirectoryService.GetByUserNameAsync(userName);
-        return res.Ok();
+        return res.ToActionResult();
     }
 }

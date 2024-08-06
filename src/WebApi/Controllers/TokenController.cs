@@ -41,7 +41,7 @@ public class TokenController(
 
         var token = await _tokenService.GetTokenByUserNameAsync(request.UserName);
 
-        return token.Ok();
+        return token.ToActionResult();
     }
 
     [HttpPost("refresh_token")]
@@ -49,6 +49,6 @@ public class TokenController(
     {
         var token = await _tokenService.RefreshTokenAsync(request.AccessToken, request.RefreshToken);
 
-        return token.Ok();
+        return token.ToActionResult();
     }
 }

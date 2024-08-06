@@ -1,6 +1,6 @@
 using CleanArch.eCode.WebApi;
 using CleanArch.eCode.WebApi.SignalR;
-using Light.AspNetCore.Hosting;
+using Light.Extensions.DependencyInjection;
 using Light.Serilog;
 using Serilog;
 using Spectre.Console;
@@ -25,7 +25,7 @@ try
     builder.Services
         .AddLowercaseControllers()
         .AddDefaultJsonOptions()
-        .ConfigureInvalidModelStateResponse();
+        .AddInvalidModelStateHandler();
 
     var app = builder.Build();
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,8 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSW.Light.ActiveDirectory" Version="0.0.0.2" />
-    <PackageReference Include="MSW.Light.AspNetCore.Hosting" Version="0.0.0.6" />
+    <PackageReference Include="Lightsoft.ActiveDirectory" Version="0.0.0.1" />
+    <PackageReference Include="Lightsoft.AspNetCore.Extensions" Version="0.0.0.2" />
+    <PackageReference Include="Lightsoft.Serilog" Version="0.0.0.1" />
   </ItemGroup>
 
   <ItemGroup>
