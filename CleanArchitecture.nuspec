@@ -3,14 +3,14 @@
   <metadata>
     <id>CleanArch.Solution.Template</id>
     <title>ASP.NET Core Clean Architecture Solution Template</title>
-    <version>0.0.0.2-alpha</version>
+    <version>0.0.0.3-alpha</version>
     <authors>minhvu</authors>
     <description>
       Clean Architecture Solution Template popularized by minhvu.
     </description>
     <language>en-US</language>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/LightsoftHub/CleanArch</projectUrl>
+    <projectUrl>https://github.com/LightsoftHub/CleanArchitecture</projectUrl>
     <releaseNotes>
       * Add template projects
     </releaseNotes>
