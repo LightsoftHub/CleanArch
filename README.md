@@ -1,7 +1,5 @@
 # Clean Architecture Solution Template for ASP.NET Core
 
-<br>
-
 ## Technologies
 
 * .NET 8
@@ -14,6 +12,16 @@
 * Serilog
 * Redis
 * RabbitMQ
+
+The easiest way to get started is to install the [.NET template](https://www.nuget.org/packages/CleanArch.Solution.Template):
+```bash
+dotnet new install CleanArch.Solution.Template::0.0.0.2-alpha
+```
+
+To create a ASP.NET Core Web API solution:
+```bash
+dotnet new clean-sln -o YourProjectName
+```
 
 If you would like to use In Memory Database, you will need to update **WebApi/appsettings.json** as follows:
 
