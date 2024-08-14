@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "minhvu",
+  "classifications": [ "AspNetCore", "Web" ],
+  "identity": "Clean.Architecture.Solution.CSharp",
+  "groupIdentity": "Clean.Architecture.Solution.Template",
+  "name": "Clean Architecture Solution Template",
+  "shortName": "clean-sln",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName":"CleanArch",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        ".template.config/**/*",
+        "templates/**/*",
+        "**/*.filelist",
+        "**/*.user",
+        "**/*.lock.json",
+        "*.nuspec"
+      ]
+    }
+  ]
+}

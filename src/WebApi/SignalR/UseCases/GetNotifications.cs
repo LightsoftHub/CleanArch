@@ -1,11 +1,11 @@
-﻿using CleanArch.eCode.Infrastructure.Identity;
-using CleanArch.eCode.Shared.Notifications;
+﻿using CleanArch.Infrastructure.Identity;
+using CleanArch.Shared.Notifications;
 using Light.EntityFrameworkCore.Extensions;
 using Light.Specification;
 using Mapster;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArch.eCode.WebApi.SignalR.UseCases;
+namespace CleanArch.WebApi.SignalR.UseCases;
 
 public class GetNotifications : NotificationLookup, IQuery<PagedResult<NotificationDto>>;
 

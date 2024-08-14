@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<RootNamespace>CleanArch.eCode.Application</RootNamespace>
-	<AssemblyName>CleanArch.eCode.Application</AssemblyName>
+	<RootNamespace>CleanArch.Application</RootNamespace>
+	<AssemblyName>CleanArch.Application</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using ClaimTypes = Light.Identity.ClaimTypes;
 
-namespace CleanArch.eCode.Infrastructure.Auth;
+namespace CleanArch.Infrastructure.Auth;
 
 public static class ClaimsPrincipalExtensions
 {

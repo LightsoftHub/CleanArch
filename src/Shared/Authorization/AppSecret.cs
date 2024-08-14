@@ -1,4 +1,4 @@
-﻿namespace CleanArch.eCode.Shared.Authorization;
+﻿namespace CleanArch.Shared.Authorization;
 
 public class DefaultUser
 {

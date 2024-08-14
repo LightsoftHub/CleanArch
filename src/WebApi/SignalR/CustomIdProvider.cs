@@ -1,7 +1,7 @@
 ﻿using Light.Identity;
 using Microsoft.AspNetCore.SignalR;
 
-namespace CleanArch.eCode.WebApi.SignalR;
+namespace CleanArch.WebApi.SignalR;
 
 public class CustomIdProvider : IUserIdProvider
 {

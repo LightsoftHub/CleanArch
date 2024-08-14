@@ -1,3 +1,3 @@
-﻿namespace CleanArch.eCode.WebApi.Models;
+﻿namespace CleanArch.WebApi.Models;
 
 public record GetTokenRequest(string UserName, string Password);

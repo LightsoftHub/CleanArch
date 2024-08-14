@@ -1,9 +1,9 @@
-﻿using CleanArch.eCode.Infrastructure.Identity;
-using CleanArch.eCode.Infrastructure.Identity.Models;
-using CleanArch.eCode.Shared.Notifications;
-using CleanArch.eCode.WebApi.SignalR.Services;
+﻿using CleanArch.Infrastructure.Identity;
+using CleanArch.Infrastructure.Identity.Models;
+using CleanArch.Shared.Notifications;
+using CleanArch.WebApi.SignalR.Services;
 
-namespace CleanArch.eCode.WebApi.SignalR.UseCases;
+namespace CleanArch.WebApi.SignalR.UseCases;
 
 public class AddNotification : SystemMessage, ICommand<Result>;
 

@@ -2,7 +2,7 @@ using Light.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 
-namespace CleanArch.eCode.Infrastructure.Auth.Permissions;
+namespace CleanArch.Infrastructure.Auth.Permissions;
 
 internal class PermissionPolicyProvider(IOptions<AuthorizationOptions> options) : IAuthorizationPolicyProvider
 {

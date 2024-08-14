@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using ValidationException = Light.Application.Common.Exceptions.ValidationException;
 
-namespace CleanArch.eCode.Application.Common.Behaviours;
+namespace CleanArch.Application.Common.Behaviours;
 
 public class ValidationBehaviour<TRequest, TResponse>(
     IEnumerable<IValidator<TRequest>> validators) : IPipelineBehavior<TRequest, TResponse>

@@ -1,9 +1,9 @@
-﻿using CleanArch.eCode.Shared.Authorization;
+﻿using CleanArch.Shared.Authorization;
 using Light.ActiveDirectory.Interfaces;
 using Light.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArch.eCode.WebApi.Controllers;
+namespace CleanArch.WebApi.Controllers;
 
 [MustHavePermission(Permissions.Users.View)]
 public class UserController(

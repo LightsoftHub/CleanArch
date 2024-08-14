@@ -1,6 +1,6 @@
 ﻿using Light.Contracts;
 
-namespace CleanArch.eCode.Shared.Common.Dtos
+namespace CleanArch.Shared.Common.Dtos
 {
     /// <summary>
     /// Lookup data entries with pagination

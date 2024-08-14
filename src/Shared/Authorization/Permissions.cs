@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace CleanArch.eCode.Shared.Authorization;
+namespace CleanArch.Shared.Authorization;
 
 public class Permissions
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 
-namespace CleanArch.eCode.WebApi.SignalR;
+namespace CleanArch.WebApi.SignalR;
 
 [Authorize]
 public class NotificationHub(ILogger<NotificationHub> logger) : Hub

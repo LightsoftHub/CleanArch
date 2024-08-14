@@ -1,7 +1,7 @@
-﻿using CleanArch.eCode.Shared.Notifications;
+﻿using CleanArch.Shared.Notifications;
 using Microsoft.AspNetCore.SignalR;
 
-namespace CleanArch.eCode.WebApi.SignalR.Services;
+namespace CleanArch.WebApi.SignalR.Services;
 
 public class NotifyService : INotifyService
 {

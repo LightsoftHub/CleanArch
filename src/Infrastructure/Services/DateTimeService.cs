@@ -1,6 +1,6 @@
-﻿using CleanArch.eCode.Application.Common.Interfaces;
+﻿using CleanArch.Application.Common.Interfaces;
 
-namespace CleanArch.eCode.Infrastructure.Services;
+namespace CleanArch.Infrastructure.Services;
 
 public class DateTimeService : IDateTime
 {

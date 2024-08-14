@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CleanArch.Solution.Template</id>
+    <title>ASP.NET Core Clean Architecture Solution Template</title>
+    <version>0.0.0.2-alpha</version>
+    <authors>minhvu</authors>
+    <description>
+      Clean Architecture Solution Template popularized by minhvu.
+    </description>
+    <language>en-US</language>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/LightsoftHub/CleanArch</projectUrl>
+    <releaseNotes>
+      * Add template projects
+    </releaseNotes>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>Clean Architecture ddd domain-driven-design clean-architecture clean architecture minhvu SOLID</tags>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+  </metadata>
+  <files>
+    <file src="README.md" />
+    <file src=".template.config\icon.png" />
+    <file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.git\**;**\.github\**;**\*.user;**\.vs\**;**\.vscode\**;**\.gitignore;**\sample\**;" />
+  </files>
+</package>

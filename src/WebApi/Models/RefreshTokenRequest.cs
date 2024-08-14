@@ -1,3 +1,3 @@
-namespace CleanArch.eCode.WebApi.Models;
+namespace CleanArch.WebApi.Models;
 
 public record RefreshTokenRequest(string AccessToken, string RefreshToken);

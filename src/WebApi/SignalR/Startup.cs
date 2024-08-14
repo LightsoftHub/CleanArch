@@ -1,7 +1,7 @@
-using CleanArch.eCode.WebApi.SignalR.Services;
+using CleanArch.WebApi.SignalR.Services;
 using Microsoft.AspNetCore.SignalR;
 
-namespace CleanArch.eCode.WebApi.SignalR;
+namespace CleanArch.WebApi.SignalR;
 
 public static class Startup
 {

@@ -1,6 +1,6 @@
-﻿using CleanArch.eCode.Shared.Notifications;
+﻿using CleanArch.Shared.Notifications;
 
-namespace CleanArch.eCode.WebApi.SignalR.Services;
+namespace CleanArch.WebApi.SignalR.Services;
 
 public interface INotifyService
 {

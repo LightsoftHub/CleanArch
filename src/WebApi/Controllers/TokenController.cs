@@ -1,10 +1,10 @@
-﻿using CleanArch.eCode.WebApi.Models;
+﻿using CleanArch.WebApi.Models;
 using Light.ActiveDirectory.Interfaces;
 using Light.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArch.eCode.WebApi.Controllers;
+namespace CleanArch.WebApi.Controllers;
 
 [AllowAnonymous]
 [Route("api/v{version:apiVersion}/oauth")]

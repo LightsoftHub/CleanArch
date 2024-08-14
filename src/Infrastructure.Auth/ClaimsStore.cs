@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Security.Claims;
 
-namespace CleanArch.eCode.Infrastructure.Auth;
+namespace CleanArch.Infrastructure.Auth;
 
 public class ClaimsStore
 {

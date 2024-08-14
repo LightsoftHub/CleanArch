@@ -1,5 +1,5 @@
-using CleanArch.eCode.WebApi;
-using CleanArch.eCode.WebApi.SignalR;
+using CleanArch.WebApi;
+using CleanArch.WebApi.SignalR;
 using Light.Extensions.DependencyInjection;
 using Light.Serilog;
 using Serilog;

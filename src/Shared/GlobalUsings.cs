@@ -1,1 +1,1 @@
-﻿global using CleanArch.eCode.Shared.Common.Dtos;
+﻿global using CleanArch.Shared.Common.Dtos;

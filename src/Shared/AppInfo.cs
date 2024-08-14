@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CleanArch.eCode.Shared;
+namespace CleanArch.Shared;
 
 public class AppInfo
 {

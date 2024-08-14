@@ -1,8 +1,8 @@
-﻿using CleanArch.eCode.Shared.Authorization;
-using CleanArch.eCode.WebApi.SignalR.UseCases;
+﻿using CleanArch.Shared.Authorization;
+using CleanArch.WebApi.SignalR.UseCases;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArch.eCode.WebApi.Controllers;
+namespace CleanArch.WebApi.Controllers;
 
 public class SignalrController(ICurrentUser currentUser) : VersionedApiController
 {

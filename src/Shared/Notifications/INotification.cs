@@ -1,4 +1,4 @@
-﻿namespace CleanArch.eCode.Shared.Notifications;
+﻿namespace CleanArch.Shared.Notifications;
 
 public interface INotification
 {

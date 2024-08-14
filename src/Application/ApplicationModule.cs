@@ -1,9 +1,9 @@
-﻿using CleanArch.eCode.Application.Common.Behaviours;
-using CleanArch.eCode.Shared;
+﻿using CleanArch.Application.Common.Behaviours;
+using CleanArch.Shared;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace CleanArch.eCode.Application;
+namespace CleanArch.Application;
 
 public static class ApplicationModule
 {

@@ -1,7 +1,7 @@
-﻿using CleanArch.eCode.Infrastructure.Identity;
+﻿using CleanArch.Infrastructure.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArch.eCode.WebApi.SignalR.UseCases;
+namespace CleanArch.WebApi.SignalR.UseCases;
 
 public record MarkNotificationAsRead(string Id) : ICommand<Result>;
 

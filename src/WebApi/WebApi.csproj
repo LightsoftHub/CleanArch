@@ -5,8 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>false</InvariantGlobalization>
-	<RootNamespace>CleanArch.eCode.WebApi</RootNamespace>
-	<AssemblyName>CleanArch.eCode.WebApi</AssemblyName>
+	<RootNamespace>CleanArch.WebApi</RootNamespace>
+	<AssemblyName>CleanArch.WebApi</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

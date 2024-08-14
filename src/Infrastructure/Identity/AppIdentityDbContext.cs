@@ -1,9 +1,9 @@
-﻿using CleanArch.eCode.Application.Common.Interfaces;
-using CleanArch.eCode.Shared.Authorization;
+﻿using CleanArch.Application.Common.Interfaces;
+using CleanArch.Shared.Authorization;
 using Light.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArch.eCode.Infrastructure.Identity;
+namespace CleanArch.Infrastructure.Identity;
 
 public class AppIdentityDbContext(
     ICurrentUser currentUser,

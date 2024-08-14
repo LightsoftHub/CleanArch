@@ -1,4 +1,4 @@
-﻿namespace CleanArch.eCode.Infrastructure.Identity.Models;
+﻿namespace CleanArch.Infrastructure.Identity.Models;
 
 public class Notification : Light.Domain.Entities.Default.AuditableEntity
 {

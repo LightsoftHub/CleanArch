@@ -1,6 +1,6 @@
-﻿using CleanArch.eCode.Application;
-using CleanArch.eCode.Infrastructure;
-using CleanArch.eCode.Infrastructure.Auth;
+﻿using CleanArch.Application;
+using CleanArch.Infrastructure;
+using CleanArch.Infrastructure.Auth;
 using Light.ActiveDirectory;
 using Light.AspNetCore.Builder;
 using Light.AspNetCore.CORS;
@@ -10,7 +10,7 @@ using Light.Extensions.DependencyInjection;
 using Light.Identity.EntityFrameworkCore;
 using Light.Identity.EntityFrameworkCore.Options;
 
-namespace CleanArch.eCode.WebApi;
+namespace CleanArch.WebApi;
 
 public static class ConfigureExtensions
 {

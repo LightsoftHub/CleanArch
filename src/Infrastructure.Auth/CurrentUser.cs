@@ -1,9 +1,9 @@
-﻿using CleanArch.eCode.Infrastructure.Auth;
-using CleanArch.eCode.Shared.Authorization;
+﻿using CleanArch.Infrastructure.Auth;
+using CleanArch.Shared.Authorization;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
-namespace CleanArch.eCode.Infrastructure.Auth;
+namespace CleanArch.Infrastructure.Auth;
 
 public class CurrentUser(IHttpContextAccessor httpContextAccessor) : ICurrentUser
 {

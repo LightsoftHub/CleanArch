@@ -1,7 +1,7 @@
-using CleanArch.eCode.Shared.Authorization;
+using CleanArch.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 
-namespace CleanArch.eCode.Infrastructure.Auth.Permissions;
+namespace CleanArch.Infrastructure.Auth.Permissions;
 
 internal class PermissionAuthorizationHandler(ICurrentUser currentUser) :
     AuthorizationHandler<PermissionRequirement>

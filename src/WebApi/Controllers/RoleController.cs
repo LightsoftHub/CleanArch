@@ -1,9 +1,9 @@
-﻿using CleanArch.eCode.Shared.Authorization;
+﻿using CleanArch.Shared.Authorization;
 using Light.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArch.eCode.WebApi.Controllers;
+namespace CleanArch.WebApi.Controllers;
 
 [MustHavePermission(Permissions.Roles.View)]
 public class RoleController(IRoleService roleService) : VersionedApiController

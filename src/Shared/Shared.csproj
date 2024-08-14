@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<RootNamespace>CleanArch.eCode.Shared</RootNamespace>
-	<AssemblyName>CleanArch.eCode.Shared</AssemblyName>
+	<RootNamespace>CleanArch.Shared</RootNamespace>
+	<AssemblyName>CleanArch.Shared</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

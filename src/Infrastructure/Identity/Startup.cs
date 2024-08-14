@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArch.eCode.Infrastructure.Identity;
+namespace CleanArch.Infrastructure.Identity;
 
 public static class Startup
 {
